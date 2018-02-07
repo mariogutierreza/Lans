@@ -2,18 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Lans;
+
+
+	{
+
+	}
 
 using Xamarin.Forms;
 
 namespace Lans
 {
+    using Views;
+
 	public partial class App : Application
 	{
 		public App ()
 		{
 			InitializeComponent();
 
-			MainPage = new Lans.MainPage();
+			MainPage = new Lans.LoginPage();
 		}
 
 		protected override void OnStart ()
